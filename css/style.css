@@ -11,8 +11,8 @@
   --border-4: #BCAEF1; /* 4등급 테두리*/
   --border-5: #E0E0E0; /* 5등급 테두리*/
   --bg-1: #FFF4CC; /* 기부 1위 배경 */
-  --bg-1: #EAF4FF; /* 기부 2위 배경 */
-  --bg-1: #FBE6D4; /* 기부 3위 배경 */
+  --bg-2: #EAF4FF; /* 기부 2위 배경 */
+  --bg-3: #FBE6D4; /* 기부 3위 배경 */
   --col-0: #FFFFFF; /* 흰색 */
   --col-1: #F5F5F5; /* 배경 */
   --col-2: #CCCCCC; /* 선 */
@@ -23,6 +23,13 @@
   --col-main: #0077FF; /* 메인 */
   --col-mainbg: #E9F4FF; /* 서브(배경) */
 }
+
+
+
+
+
+
+
 
 
 /* 전체 적용 */
@@ -39,31 +46,54 @@ nav a:hover {color: var(--col-main);}
 
 /* 메인 배너 스와이퍼 */
 .swiper {
-        max-width: 700px;
-        height: 400px;
-        overflow: visible;
-        overflow: hidden;
-        }
+  max-width: 700px;
+  height: 400px;
+  overflow: visible;
+  overflow: hidden;
+}
 
-        .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: visible;
-        }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
 
-        .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        max-width: 700px;
-        object-fit: cover;
-        }
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  object-fit: cover;
+}
 
-        .swiper {
-        --swiper-theme-color: grey;
-        --swiper-pagination-bullet-size: 10px;
-        --swiper-pagination-bullet-inactive-color: var(--col-sub);
-        --swiper-pagination-bullet-inactive-opacity: 0.7;
-        }
-        .swiper-pagination-bullet {background-color: var(--col-mainbg);}
-        .swiper-pagination-bullet-active {background-color: var(--col-main);}
+.swiper {
+  --swiper-theme-color: grey;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-inactive-color: var(--col-sub);
+  --swiper-pagination-bullet-inactive-opacity: 0.7;
+}
+.swiper-pagination-bullet {background-color: var(--col-mainbg);}
+.swiper-pagination-bullet-active {background-color: var(--col-main);}
+
+
+
+
+/* 분류 */
+.ctgry {display: flex; justify-content: space-around; text-align: center; margin: 0 50px 0 50px;}
+.ctgry div:hover {transform: scale(1.02);}
+.ctgry div a img {height: 30px;}
+.ctgry div a button {height: 25px; display: inline-flex; align-items: center; text-decoration: none; color: black; height: 25px; margin-left: 3px;}
+
+
+/* 분류 카드 */
+.post-card img {height: 180px; object-fit: cover;}
+.post-title {font-size: 1.1rem; font-weight: 600;}
+.post-meta {font-size: 0.9rem; color: #666;}
+.progress-wrapper {display: flex; justify-content: space-between; align-items: center; margin-top: 0;}
+.post-card {transition: transform 0.2s ease-in-out;}
+.post-card:hover {transform: scale(1.02);}
+.progress {height: 2px;}
+
+#pagination .btn { min-width: 36px; padding: 4px 8px;}
+/* Search Bar */
+.search-bar {width: 790px; margin: auto; padding-bottom: 40px;}
