@@ -78,22 +78,4 @@ nav a:hover {color: var(--col-main);}
 
 
 
-/* 분류 */
-.ctgry {display: flex; justify-content: space-around; text-align: center; margin: 0 50px 0 50px;}
-.ctgry div:hover {transform: scale(1.02);}
-.ctgry div a img {height: 30px;}
-.ctgry div a button {height: 25px; display: inline-flex; align-items: center; text-decoration: none; color: black; height: 25px; margin-left: 3px;}
 
-
-/* 분류 카드 */
-.post-card img {height: 180px; object-fit: cover;}
-.post-title {font-size: 1.1rem; font-weight: 600;}
-.post-meta {font-size: 0.9rem; color: #666;}
-.progress-wrapper {display: flex; justify-content: space-between; align-items: center; margin-top: 0;}
-.post-card {transition: transform 0.2s ease-in-out;}
-.post-card:hover {transform: scale(1.02);}
-.progress {height: 2px;}
-
-#pagination .btn { min-width: 36px; padding: 4px 8px;}
-/* Search Bar */
-.search-bar {width: 790px; margin: auto; padding-bottom: 40px;}
